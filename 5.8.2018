@@ -1,0 +1,5 @@
+Almost done labelling.
+Need to cross check with the needle position once done.
+David found a pretrained Unet on lung CT for bulk lung segmentation. 
+That's in Keras so it is tf actually and should be easy to transfer. 
+
