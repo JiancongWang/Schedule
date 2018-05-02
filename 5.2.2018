@@ -1,0 +1,71 @@
+On going projects and critical resources needed.Projects ranked from time priority high to low
+
+Brain project - 1
+Next action: train a network for white matter lesion segmentation
+Next next action: train a classifier on those intermediate output
+Timeline estimate:
+I will try to do this before Andreas leaves, that's mid June.
+Unmet Resources needed: 
+Need more GPU (a must)
+Need a radiologist to check the data. (Temperally Optional, but definitely needed for better publication sake). 
+Need permission to dig data in PACs. Set up the orthanc on brain cases (Temperally Optional, but definitely needed for 
+better project management sake).
+Additional thought:
+DEfinitely interesting and worth doing. 
+I want to take the data digging part into my own hand as well. That way I almost have full control of the whole project 
+progress. 
+
+Placenta project - 2
+Next action: help Nadav find 2nd trimester cases and get those labelled
+Next next action: help Ipek meet the reviewer's critique (maybe)
+Unmet Resources needed:
+Funding to pay the chinese rad
+Timeline estimate for next action:
+This one should be easy to do, 1~2 days on my side. The database is local and image total is only 300GB. Nadav has already 
+have the whole database backed up. I get full control of those data. 
+Additional thought:
+Paul's latest comment for Ipek's rejected miccai paper here. 
+"Bummer about the bad reviews. I think it's challenging to get an application-of-CNN paper to do well in places like MICCAI 
+right now, just because of saturation and reviewer fatigue. My recommendation would be to prioritize a journal paper on 
+placenta segmentation for a more clinical audience. "
+I have to disagree. MICCAI paper on CNN is getting more and more innovative and practical each year.  
+For example last year a guy added a PCA shape constraint loss to CNN and get pretty good result on shape. We could apply that
+in this one as well to get better segmentation. 
+PCA shape. that's supposed to be Paul's expertise. In addition, both reviewer's request are standard in CNN paper. My 
+suggestion is, before complaining about the audience, we should do more literature review and try harder. 
+I think regular literature review is in urgent need for us. 
+ 
+Lung project - 2
+Next action: clean the 700 data David sent to XNAT and get them labelled
+Next next action: train a detection network on LIDC + Kaggle + PennLung800(what I call our dataset for now).
+Unmet Resources needed: 
+Labor power. (Optional)
+Timeline estimate for next action:
+If I do it myself alone, probably takes anohter 2 week full time 14hr per day like the brains one did. 
+Additional thought: 
+I think even in plain detection perspective, we have 800 more than LIDC and Kaggle. If we don't suck we 
+should be able to beat them in detection performance as well simply because we get more data. 
+
+Detection, drawing bounding box, is actually quite intricate work. A lot of detail to get right. 
+I need some time to really dig in the fasterRCNN and YOLO paper and code. May take a while. But it will be worth it. I will 
+start with a 2D example first just to get a hang of how to run those. 
+
+
+PANTs - 3
+Next action: finish the prototype and test it
+Next next action: sit down with Nick, Paul, Long. Dig through the code and give an estimate how much effort need to spend
+Unmet Resources needed: 
+None
+Timeline estimate for next action: 
+Probably a week or two, with help from Nick
+Additional thought:
+I think by now both you and Nick realize how powerful GPU is for this application. So we are all on the same page now and 
+that's good.
+Before I felt like either you guys or me or both are idiots when I was trying to preach GPU to you guys and you look at me 
+like some sort of nut head and enthuisast.  
+
+
+
+
+
+
