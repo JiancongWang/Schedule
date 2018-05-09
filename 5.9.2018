@@ -1,19 +1,43 @@
 Lung project:
-Last Wednesday and Thursday, spent like 2 days on using VGG to extract feature + replicating a simplified YOLO detection head on a simple 
-problem. Works now. Next should go for full YOLO/ faster RCNN for the lung project.
+Practicing detection network:
+Drawing bounding box will be useful when detecting lung nodule. 
+I read both paper of YOLO and faster RCNN. The concept on paper are simple but I know there are some hidden caveat that has to 
+be implemented right. So I want to implement the thing myself and grasp feeling of the detail. Just happen that the pace maker
+project by 2 undergrad needs a hand. 
+So I spent last Wednesday and Thursday on this. I used pre-trained VGG to extract feature + replicating a simplified YOLO 
+detection head. On ~490 train images/~70 test images I was able to draw reasonably well bounding box on pace maker on X-ray. 
+
 
 Brain project:
-Friday and saturday, reading paper of from KK, the winner of Brats. He mentioned he use fully connected CRF for post processing.
-So I dug out the CRF paper to read. Two years ago I didn't understand the fully connected CRF paper. Surprisingly now now I can
-understand most of it. Real nice. I will dig out the 2D version code, read it and implement a 3D version.  
+Literature review on fully connected conditional random field as a mean of post processing (cleaning up label): 
+Friday and saturday, reading paper of from KK, the winner of Brats. He mentioned he used fully connected CRF for post 
+processing to clean up label.
+So I dug out the fully connected CRF paper to read. 
+Two years ago I didn't understand the fully connected CRF paper. Surprisingly now now I can understand most of it. 
+Now that I understand it, I will dig out the 2D version code, read it and adapt it to 3D. 
 
-Sunday, bought a drawing pad. Install driver on linux. It is fun to play with. 
- 
-Monday, done combining Michael (the medical student that Andreas sources)'s segmentation with my own. I am preparing data for 
-trying deep medic/Unet on it. Start to read the code and try out Deep medic on it. 
+And I also notice they still use raw intensity and position as CRF features. Instead we can try to use CNN features. That can
+probably be a nice MICCAI paper if we can get the gradient passed back. 
 
-Tuesday, Preparing code for data augmentation. I modified the code from spatial transformation network. Now we have a working 
-differentiable trilinear interpolation written in native tensorflow. This helps a lot. 
+Setting up a drawing pad:
+Sunday, I bought a WACOM Intuos Pro drawing pad. I installed driver on linux and it works. The hope is with this I can label 
+faster. Indeed now drawing detailed boundary become much easier. 
+Just now Paul kindly add some hotkeys and default setting on ITK SNAP. Really saves a lot of clicking time.
+
+Cleaning and preparing data for the brain projects:
+Monday, not that productive. I checked and combined Michael (the medical student that Andreas sources)'s segmentation with my own. 
+I have written up the datasetAPI code for that. 
+
+Data augmentation code for the brain projects:
+Tuesday, Preparing code for data augmentation. To work with the datasetAPI to augment the data on the fly, I need a native 
+tensorflow tri-linear implementation for the augmentation (random rotation, random small deformation map, this needs 
+interpolation). 
+I modified the bilinear code from spatial transformation network repo. Now we have a working differentiable trilinear 
+interpolation written in native tensorflow.
+
+Working on a native tensorflow implementation of random affine transformation:
+Wednesday, continue working on the augmentation code. Reviewing quaternion now. Will get this done today. 
+
 
 
 
