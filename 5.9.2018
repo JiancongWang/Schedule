@@ -4,11 +4,16 @@ problem. Works now. Next should go for full YOLO/ faster RCNN for the lung proje
 
 Brain project:
 Friday and saturday, reading paper of from KK, the winner of Brats. He mentioned he use fully connected CRF for post processing.
-So I dug out the CRF paper to read. Two years ago I didn't understand the fully connected CRF paper. Now I do in almost all 
-details. 
+So I dug out the CRF paper to read. Two years ago I didn't understand the fully connected CRF paper. Surprisingly now now I can
+understand most of it. Real nice. I will dig out the 2D version code, read it and implement a 3D version.  
+
+Sunday, bought a drawing pad. Install driver on linux. It is fun to play with. 
+ 
 Monday, done combining Michael (the medical student that Andreas sources)'s segmentation with my own. I am preparing data for 
 trying deep medic/Unet on it. Start to read the code and try out Deep medic on it. 
 
 Tuesday, Preparing code for data augmentation. I modified the code from spatial transformation network. Now we have a working 
 differentiable trilinear interpolation written in native tensorflow. This helps a lot. 
+
+
 
