@@ -1,0 +1,14 @@
+Lung project:
+Last Wednesday and Thursday, spent like 2 days on using VGG to extract feature + replicating a simplified YOLO detection head on a simple 
+problem. Works now. Next should go for full YOLO/ faster RCNN for the lung project.
+
+Brain project:
+Friday and saturday, reading paper of from KK, the winner of Brats. He mentioned he use fully connected CRF for post processing.
+So I dug out the CRF paper to read. Two years ago I didn't understand the fully connected CRF paper. Now I do in almost all 
+details. 
+Monday, done combining Michael (the medical student that Andreas sources)'s segmentation with my own. I am preparing data for 
+trying deep medic/Unet on it. Start to read the code and try out Deep medic on it. 
+
+Tuesday, Preparing code for data augmentation. I modified the code from spatial transformation network. Now we have a working 
+differentiable trilinear interpolation written in native tensorflow. This helps a lot. 
+
