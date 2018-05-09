@@ -5,8 +5,8 @@ I read both paper of YOLO and faster RCNN. The concept on paper are simple but I
 be implemented right. So I want to implement the thing myself and grasp the detail. Just happen that the pace maker
 project by 2 undergrad needs a hand. 
 So I spent last Wednesday and Thursday on this. I used pre-trained VGG to extract feature + replicating a simplified YOLO 
-detection head. On ~490 train images/~70 test images I was able to draw reasonably well bounding box on pace maker on X-ray. 
-
+detection head. On ~490 train images/~70 test images I was able to draw reasonably well bounding box on pacemaker on X-ray. 
+The label by those undergrad is sloppy and results in some shift. But for now it is ok. 
 
 Brain project:
 Literature review on fully connected conditional random field as a mean of post processing (cleaning up label): 
