@@ -1,0 +1,22 @@
+Last Thursday and Friday:
+Review how to parameterize an affine transformation. Code up the elastic transformation. 
+Purpose: Now we have a working on-the-fly data augmentation code that can apply for both brain and lung project
+
+I helped Eduardo draft up a gpu grant. Will follow up with him on this.  
+
+HuZe updates the system and cuda version on the chinese cluster. I confirmed. Now it is up and fully usable. 
+
+Saturday:
+Code up the deepmedic network in Tensorflow. 
+Purpose: Deepmedic comes in Theano. Theano is dead and its author already join google. So I decided to code up the 
+network in Tensorflow. 
+
+Monday: 
+Continue coding up for deep medic. Implement a patch generator for deepmedic. 
+Purpose: Deepmedic requires a low and high resolution patch to generate one segmentation. Just spend time to implement that. 
+
+BTW Nadav told me the Nvidia gpu grant he applied is approved. It took roughly 2-3 week for it to come down.
+
+
+
+
