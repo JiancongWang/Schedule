@@ -31,3 +31,5 @@ not even comparison in terms of convenience.
 
 Sunday:
 Continue doing pytorch tutorial and read code of fasterRCNN. Couple more function to go.
+
+Receive segmentation result on both chinese radiologists. I sent them to Nadav to take a look. 
