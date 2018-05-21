@@ -21,9 +21,14 @@ Find that I forgot to skull strip the flair image. So figure out how to warp the
 I know some affine transformation screw up due to either upside down image or orientation matrix mess up. 
 So need to pick out those and re-run. 
 
+Updated: I just done manually checking the brain map...There are around 30 images where the registration from flair to super 
+resolution T1 screw up. So... we loses up to 1/6 accuracy even before down stream processing? 
+I will fix those flair images and re-run the registration. 
+
 Read a paper on DenseNet and two papers on weakly supervised learning, basically given only classification label one wants to 
 give a rough segmentation as intermediate output and key is of course to make the segmentation as fine as possible. 
 Very useful on large dataset with only categorical label.  
+
 
 Saturday:
 Doing pytorch tutorial. Pytorch is indeed much easier to write and use than tensorflow especially for newbie. For NLP there is 
