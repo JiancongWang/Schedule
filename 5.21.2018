@@ -30,6 +30,7 @@ Doing pytorch tutorial. Pytorch is indeed much easier to write and use than tens
 not even comparison in terms of convenience. 
 
 Sunday:
-Continue doing pytorch tutorial and read code of fasterRCNN. Couple more function to go.
+Continue doing pytorch tutorial and read code of fasterRCNN. Couple more functions to go.
 
-Receive segmentation result on both chinese radiologists. I sent them to Nadav to take a look. 
+Receive segmentation result on both chinese radiologists on 2 second trimester images that Nadav gave me
+last week. I sent the segmentation to Nadav to take a look. 
