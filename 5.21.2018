@@ -17,13 +17,16 @@ Focal loss is basically a more aggressively decayed cross entropy that subject l
 to implement, so it is a good find. 
 
 Friday:
-Find that I forgot to skull strip the flair image. So figure out how to warp the brain map from T1 back to FLAIR. Run those. 
+Found that I forgot to skull strip the flair image. So figure out how to warp the brain map from T1 back to FLAIR. Run those. 
 I know some affine transformation screw up due to either upside down image or orientation matrix mess up. 
 So need to pick out those and re-run. 
 
 Updated: I just done manually checking the brain map...There are around 30 images where the registration from flair to super 
 resolution T1 screw up. So... we lose up to 1/6 accuracy even before down stream processing? 
 I will fix those flair images and re-run the registration. 
+
+Updated: Long suggested I did manual registration using ITK SNAP since it is not worth it just to register 1/10th image
+and re-adjust parameter. Just done that. Then I find about 10 images has bad brain maps from T1. Those I leave out.  
 
 Read a paper on DenseNet and two papers on weakly supervised learning, basically given only classification label one wants to 
 give a rough segmentation as intermediate output and key is of course to make the segmentation as fine as possible. 
