@@ -1,0 +1,33 @@
+Monday:
+Writing some simple test for the patch generation and augmentation code. Fix some bugs discovered in the process. 
+The code is clean now.  
+
+Tuesday:
+I am about to run the patch generation code and found an image that's upside down and another image that couple layer's label
+is missing, very normal when you try to label high resolution ms images. 
+So I checked and correct those. 
+
+Wednesday, Thursday:
+Generate patches, code up the optimizer part of the network. 
+
+Read paper on YOLO 9000/YOLO v3 and Read paper on Focal loss/Retina Net. Both are state of the art bounding box detection paper. 
+YOLO9000 uses hierachical softmax to combine coarse grain/finer grain classification label and use kmean to define bounding box
+sizes and scale. Very reasonable stategy. 
+Focal loss is basically a more aggressively decayed cross entropy that subject less to class imbalance. It is also quite easy 
+to implement, so it is a good find. 
+
+Friday:
+Find that I forgot to skull strip the flair image. So figure out how to warp the brain map from T1 back to FLAIR. Run those. 
+I know some affine transformation screw up due to either upside down image or orientation matrix mess up. 
+So need to pick out those and re-run. 
+
+Read a paper on DenseNet and two papers on weakly supervised learning, basically given only classification label one wants to 
+give a rough segmentation as intermediate output and key is of course to make the segmentation as fine as possible. 
+Very useful on large dataset with only categorical label.  
+
+Saturday:
+Doing pytorch tutorial. Pytorch is indeed much easier to write and use than tensorflow especially for newbie. For NLP there is 
+not even comparison in terms of convenience. 
+
+Sunday:
+Continue doing pytorch tutorial and read code of fasterRCNN. Couple more function to go.
